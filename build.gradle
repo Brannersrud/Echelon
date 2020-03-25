@@ -18,6 +18,7 @@ dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8"
 }
 
+
 compileKotlin {
     kotlinOptions.jvmTarget = "11"
 }
@@ -46,6 +47,7 @@ jar {
         attributes 'Main-Class': 'Main'
     }
 }
+
 
 sourceSets {
     main.java.srcDirs += 'src/main/kotlin'
