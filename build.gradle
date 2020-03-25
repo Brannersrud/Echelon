@@ -37,12 +37,7 @@ buildConfig {
 
     //buildConfigField "String", "TOKEN_KEY", apikeyProperties['TOKEN_KEY']
 }
-task copyToLib(type: Copy) {
-    into "$buildDir/libs"
-    from(configurations.compile)
-}
 
-stage.dependsOn(copyToLib)
 
 wrapper {
     gradleVersion = '5.2.1'
